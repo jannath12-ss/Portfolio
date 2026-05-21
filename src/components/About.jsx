@@ -11,15 +11,15 @@ function About() {
       }}
     >
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-white/30 to-gray-900/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-Black/30 to-gray-900/60"></div>
 
       {/* NAVBAR */}
-      <nav className="relative w-full bg-white/10 backdrop-blur-lg border-b border-white/20 shadow-lg px-10 py-5 flex items-center justify-between">
-        <h1 className="text-3xl font-bold text-white tracking-wide">
+      <nav className="relative w-full bg-Black/10 backdrop-blur-lg border-b border-Black/20 shadow-lg px-10 py-5 flex items-center justify-between">
+        <h1 className="text-3xl font-bold text-Black tracking-wide">
           My Portfolio
         </h1>
 
-        <ul className="flex gap-8 text-white font-medium">
+        <ul className="flex gap-8 text-Black font-medium">
           <li className="hover:text-pink-300 transition">About</li>
           <li className="hover:text-pink-300 transition">Education</li>
           <li className="hover:text-pink-300 transition">Skill</li>
@@ -48,19 +48,19 @@ function About() {
 
           {/* TEXT (TRANSPARENT STYLE) */}
           <div className="md:w-1/2 text-left">
-            <h2 className="text-5xl font-extrabold text-white mb-8 animate-pulse">
+            <h2 className="text-5xl font-extrabold text-Black mb-8 animate-pulse">
               Jannath
             </h2>
 
-            <p className="text-white/90 text-lg leading-9 mb-6">
+            <p className="text-Black/90 text-lg leading-9 mb-6">
               Hello! My name is Jannath, and I am from Nedumangadu.
             </p>
 
-            <p className="text-white/80 text-lg leading-9 mb-6">
+            <p className="text-Black/80 text-lg leading-9 mb-6">
               I am a hardworking and dedicated student with interest in tech.
             </p>
 
-            <p className="text-white/70 text-lg leading-9">
+            <p className="text-Black/70 text-lg leading-9">
               I know C, Python, SQL, and web development.
             </p>
           </div>

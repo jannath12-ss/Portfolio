@@ -19,7 +19,7 @@ function Education() {
       <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-white/25 to-gray-900/60"></div>
 
       {/* CONTENT (NO BOX) */}
-      <div className="relative w-full max-w-3xl text-white text-center space-y-6">
+      <div className="relative w-full max-w-3xl text-Black text-center space-y-6">
 
         <h2 className="text-5xl font-bold mb-10">
           Education

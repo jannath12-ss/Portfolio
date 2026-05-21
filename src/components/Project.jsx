@@ -16,10 +16,10 @@ function Project() {
       ></div>
 
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-800/60 via-white/25 to-gray-800/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-800/60 via-Black/25 to-gray-800/60"></div>
 
       {/* CONTENT (NO BOX) */}
-      <div className="relative w-full max-w-4xl text-white">
+      <div className="relative w-full max-w-4xl text-Black">
 
         {/* TITLE */}
         <h2 className="text-5xl font-bold text-center mb-10 animate-pulse">

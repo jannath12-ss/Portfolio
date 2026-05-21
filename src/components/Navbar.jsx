@@ -7,12 +7,12 @@ function Navbar() {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
 
         {/* LOGO */}
-        <h1 className="text-white text-2xl font-bold">
+        <h1 className="text-Black text-2xl font-bold">
           Portfolio
         </h1>
 
         {/* NAV LINKS */}
-        <ul className="flex items-center gap-8 text-white">
+        <ul className="flex items-center gap-8 text-Black">
 
           <li>
             <a href="#about" className="hover:text-sky-400 transition">

@@ -10,7 +10,7 @@ function Footer() {
       <nav className="absolute top-0 left-0 w-full z-20 bg-black/30 backdrop-blur-md border-b border-white/10">
         <div className="max-w-6xl mx-auto flex items-center justify-center px-6 py-4">
 
-          <ul className="flex gap-10 text-white font-medium">
+          <ul className="flex gap-10 text-Black font-medium">
             {navItems.map((item) => (
               <li key={item}>
                 <a
@@ -36,7 +36,7 @@ function Footer() {
       ></div>
 
       {/* TRANSPARENT OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-white/20 to-gray-900/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-Black/20 to-gray-900/60"></div>
 
       {/* FLOATING EFFECT */}
       <div className="absolute inset-0 pointer-events-none">
@@ -49,17 +49,17 @@ function Footer() {
 
         {/* LEFT SIDE - NAME */}
         <div>
-          <h2 className="text-lg md:text-2xl font-bold tracking-widest animate-bounce text-white drop-shadow-lg">
+          <h2 className="text-lg md:text-2xl font-bold tracking-widest animate-bounce text-Black drop-shadow-lg">
             Jannath S S
           </h2>
 
-          <p className="text-xs md:text-sm text-white/70 mt-1">
+          <p className="text-xs md:text-sm text-Black/70 mt-1">
             Aspiring Full Stack Developer ✨
           </p>
         </div>
 
         {/* RIGHT SIDE - COPYRIGHT */}
-        <p className="text-sm md:text-base text-white/90">
+        <p className="text-sm md:text-base text-Black/90">
           © {new Date().getFullYear()} All Rights Reserved.
         </p>
 
