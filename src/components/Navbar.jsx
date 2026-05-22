@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="navbar-wrapper">
 
@@ -19,8 +22,16 @@ function Navbar() {
 
         </div>
 
+        {/* MENU BUTTON */}
+        <div
+          className="menu-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </div>
+
         {/* MENU */}
-        <ul className="nav-links">
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
 
           <li>
             <a href="#about" className="nav-link">
@@ -52,12 +63,13 @@ function Navbar() {
             </a>
           </li>
 
-        </ul>
+          <li>
+            <button className="hire-btn">
+              Hire Me
+            </button>
+          </li>
 
-        {/* BUTTON */}
-        <button className="hire-btn">
-          Hire Me
-        </button>
+        </ul>
 
       </nav>
 
