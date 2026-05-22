@@ -1,109 +1,80 @@
 import React from "react";
 
 function Footer() {
-  const navItems = ["About", "Education", "Skill", "Project", "Contact"];
-
   return (
-    <footer className="relative w-full text-white overflow-hidden">
+    <footer className="footer-section">
 
-      {/* NAVBAR INSIDE FOOTER */}
-      <nav className="absolute top-0 left-0 w-full z-20 bg-black/30 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-6xl mx-auto flex items-center justify-center px-6 py-4">
+      {/* GLOW */}
+      <div className="footer-glow footer-glow1"></div>
+      <div className="footer-glow footer-glow2"></div>
 
-          <ul className="flex gap-10 text-Black font-medium">
-            {navItems.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="hover:text-sky-400 transition"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
+      <div className="footer-container">
+
+        {/* TOP */}
+        <div className="footer-top">
+
+          {/* BRAND */}
+          <div className="footer-brand">
+
+            <h2 className="footer-logo">Jannath</h2>
+
+            <p className="footer-text">
+              Frontend Developer & UI Designer crafting
+              aesthetic and modern digital experiences.
+            </p>
+
+          </div>
+
+          {/* NAVIGATION */}
+          <div>
+            <h3 className="footer-title">Navigation</h3>
+
+            <ul className="footer-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* SOCIAL */}
+<div>
+
+  <h3 className="footer-title">
+    Social Media
+  </h3>
+
+  <div className="social-icons">
+
+    <a href="#" aria-label="Instagram">
+      ⌾
+    </a>
+
+    <a href="#" aria-label="GitHub">
+      GH
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+      in
+    </a>
+
+    <a href="#" aria-label="Twitter">
+      X
+    </a>
+
+  </div>
+
+</div>
 
         </div>
-      </nav>
 
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center animate-zoomSlow"
-        style={{
-          backgroundImage:
-            "url('https://wallpaperaccess.com/full/334517.jpg')",
-        }}
-      ></div>
-
-      {/* TRANSPARENT OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-Black/20 to-gray-900/60"></div>
-
-      {/* FLOATING EFFECT */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="glow glow1"></div>
-        <div className="glow glow2"></div>
-      </div>
-
-      {/* CONTENT */}
-      <div className="relative z-10 flex items-center justify-between px-10 py-8 pt-20">
-
-        {/* LEFT SIDE - NAME */}
-        <div>
-          <h2 className="text-lg md:text-2xl font-bold tracking-widest animate-bounce text-Black drop-shadow-lg">
-            Jannath S S
-          </h2>
-
-          <p className="text-xs md:text-sm text-Black/70 mt-1">
-            Aspiring Full Stack Developer ✨
-          </p>
+        {/* BOTTOM */}
+        <div className="footer-bottom">
+          <p>© 2025 Jannath. All Rights Reserved.</p>
         </div>
 
-        {/* RIGHT SIDE - COPYRIGHT */}
-        <p className="text-sm md:text-base text-Black/90">
-          © {new Date().getFullYear()} All Rights Reserved.
-        </p>
-
       </div>
-
-      {/* ANIMATION STYLE */}
-      <style>{`
-        @keyframes zoomSlow {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.08); }
-          100% { transform: scale(1); }
-        }
-
-        .animate-zoomSlow {
-          animation: zoomSlow 18s ease-in-out infinite;
-        }
-
-        .glow {
-          position: absolute;
-          width: 200px;
-          height: 200px;
-          background: rgba(255,255,255,0.15);
-          border-radius: 50%;
-          filter: blur(60px);
-          animation: floatGlow 10s infinite ease-in-out;
-        }
-
-        .glow1 {
-          top: 20%;
-          left: 10%;
-        }
-
-        .glow2 {
-          bottom: 10%;
-          right: 15%;
-          animation-delay: 2s;
-        }
-
-        @keyframes floatGlow {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-          100% { transform: translateY(0px); }
-        }
-      `}</style>
 
     </footer>
   );

@@ -1,73 +1,61 @@
 import React from "react";
 
-function Project() {
+function Projects() {
   return (
-    <div
-      id="project"
-      className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden"
-    >
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center animate-zoomSlow"
-        style={{
-          backgroundImage:
-            "url('https://wallpaperaccess.com/full/334517.jpg')",
-        }}
-      ></div>
+    <section id="projects" className="section">
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-800/60 via-Black/25 to-gray-800/60"></div>
+      <h2 className="title">
+        Projects
+      </h2>
 
-      {/* CONTENT (NO BOX) */}
-      <div className="relative w-full max-w-4xl text-Black">
+      <div className="grid md:grid-cols-3 gap-8">
 
-        {/* TITLE */}
-        <h2 className="text-5xl font-bold text-center mb-10 animate-pulse">
-          My Project
-        </h2>
-
-        {/* CONTENT TEXT ONLY */}
-        <div className="space-y-6 text-lg leading-9">
-
-          <h3 className="text-3xl font-semibold text-sky-200 text-center">
+        <div className="project-card">
+          <h3 className="text-pink-200 text-2xl mb-4">
             Campus Placement System
           </h3>
 
-          <p className="hover:scale-105 transition duration-300">
-            The Campus Placement System is a web-based application developed to
-            simplify and manage placement activities in colleges.
+          <p className="mb-4">
+            A web app to manage campus placements and student recruitment.
           </p>
 
-          <p className="hover:scale-105 transition duration-300">
-            It helps students, placement officers, and companies interact
-            efficiently during recruitment.
+          <p className="text-pink-300">
+            HTML • CSS • React • Python • SQL
           </p>
-
-          <p className="hover:scale-105 transition duration-300">
-            Companies can post jobs and students can apply easily through the system.
-          </p>
-
-          <p className="text-sky-200 font-medium hover:scale-105 transition duration-300">
-            Technologies: HTML, CSS, JavaScript, React, Python, SQL
-          </p>
-
         </div>
+
+        <div className="project-card">
+          <h3 className="text-pink-200 text-2xl mb-4">
+            Portfolio Website
+          </h3>
+
+          <p className="mb-4">
+            A modern responsive portfolio with aesthetic UI and animations.
+          </p>
+
+          <p className="text-pink-300">
+            React • Tailwind
+          </p>
+        </div>
+
+        <div className="project-card">
+          <h3 className="text-pink-200 text-2xl mb-4">
+            Weather App
+          </h3>
+
+          <p className="mb-4">
+            Real-time weather forecast application using API integration.
+          </p>
+
+          <p className="text-pink-300">
+            JavaScript • API
+          </p>
+        </div>
+
       </div>
 
-      {/* ANIMATION */}
-      <style>{`
-        @keyframes zoomSlow {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.06); }
-          100% { transform: scale(1); }
-        }
-
-        .animate-zoomSlow {
-          animation: zoomSlow 18s ease-in-out infinite;
-        }
-      `}</style>
-    </div>
+    </section>
   );
 }
 
-export default Project;
+export default Projects;

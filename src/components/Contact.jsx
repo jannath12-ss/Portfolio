@@ -1,64 +1,124 @@
 import React from "react";
 
 function Contact() {
+
   return (
-    <div
-      id="contact"
-      className="min-h-screen relative flex items-center justify-center p-6 overflow-hidden"
-    >
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center animate-zoomSlow"
-        style={{
-          backgroundImage:
-            "url('https://wallpaperaccess.com/full/334517.jpg')",
-        }}
-      ></div>
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-800/60 via-white/25 to-gray-800/70"></div>
+    <section id="contact" className="section contact-section">
 
-      {/* CONTENT (NO BOX) */}
-      <div className="relative w-full max-w-3xl text-Black text-lg space-y-6">
+      {/* GLOW EFFECT */}
+      <div className="glow glow1"></div>
+      <div className="glow glow2"></div>
 
-        <h2 className="text-5xl font-bold text-center mb-10 animate-pulse">
-          Contact
-        </h2>
+      {/* TITLE */}
+      <h2 className="title">
+        Contact Me
+      </h2>
 
-        <p className="hover:scale-105 transition duration-300">
-          <strong className="text-sky-200">Name:</strong> Jannath
-        </p>
+      {/* SUBTITLE */}
+      <p className="contact-subtitle">
+        Have a project idea, collaboration or opportunity?
+        Feel free to reach out and let's create something amazing together.
+      </p>
 
-        <p className="hover:scale-105 transition duration-300">
-          <strong className="text-sky-200">Location:</strong> Nedumangadu, Kerala
-        </p>
+      {/* CONTACT CONTAINER */}
+      <div className="contact-container glass">
 
-        <p className="hover:scale-105 transition duration-300">
-          <strong className="text-sky-200">Email:</strong> jannath@gmail.com
-        </p>
+        {/* LEFT SIDE */}
+        <div className="contact-info">
 
-        <p className="hover:scale-105 transition duration-300">
-          <strong className="text-sky-200">Phone:</strong> +91 9876543210
-        </p>
+          <h3>
+            Let's Connect
+          </h3>
 
-        <p className="hover:scale-105 transition duration-300">
-          <strong className="text-sky-200">LinkedIn:</strong> linkedin.com/in/jannath
-        </p>
+          <p>
+            I’m always open to discussing new projects,
+            creative ideas and opportunities to grow as a developer.
+          </p>
+
+          {/* INFO BOXES */}
+          <div className="contact-box">
+
+            <div className="contact-icon">
+              ✉
+            </div>
+
+            <div>
+              <h4>Email</h4>
+              <span>jannath@gmail.com</span>
+            </div>
+
+          </div>
+
+          <div className="contact-box">
+
+            <div className="contact-icon">
+              📍
+            </div>
+
+            <div>
+              <h4>Location</h4>
+              <span>Kerala, India</span>
+            </div>
+
+          </div>
+
+          <div className="contact-box">
+
+            <div className="contact-icon">
+              ☎
+            </div>
+
+            <div>
+              <h4>Phone</h4>
+              <span>+91 98765 43210</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* RIGHT SIDE */}
+        <form className="contact-form">
+
+          <div className="input-group">
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="input"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="input"
+            />
+
+          </div>
+
+          <input
+            type="text"
+            placeholder="Subject"
+            className="input"
+          />
+
+          <textarea
+            rows="6"
+            placeholder="Write your message..."
+            className="input"
+          ></textarea>
+
+          <button className="btn contact-btn">
+            Send Message
+          </button>
+
+        </form>
+
       </div>
 
-      {/* ANIMATION */}
-      <style>{`
-        @keyframes zoomSlow {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.05); }
-          100% { transform: scale(1); }
-        }
+    </section>
 
-        .animate-zoomSlow {
-          animation: zoomSlow 18s ease-in-out infinite;
-        }
-      `}</style>
-    </div>
   );
 }
 

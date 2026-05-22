@@ -2,53 +2,66 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-md border-b border-white/10 z-50">
+    <header className="navbar-wrapper">
 
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <nav className="navbar">
 
         {/* LOGO */}
-        <h1 className="text-Black text-2xl font-bold">
-          Portfolio
-        </h1>
+        <div className="logo-section">
 
-        {/* NAV LINKS */}
-        <ul className="flex items-center gap-8 text-Black">
+          <div className="logo-circle">
+            J
+          </div>
+
+          <h1 className="logo-name">
+            Jannath
+          </h1>
+
+        </div>
+
+        {/* MENU */}
+        <ul className="nav-links">
 
           <li>
-            <a href="#about" className="hover:text-sky-400 transition">
+            <a href="#about" className="nav-link">
               About
             </a>
           </li>
 
           <li>
-            <a href="#education" className="hover:text-sky-400 transition">
+            <a href="#education" className="nav-link">
               Education
             </a>
           </li>
 
           <li>
-            <a href="#skill" className="hover:text-sky-400 transition">
-              Skill
+            <a href="#skills" className="nav-link">
+              Skills
             </a>
           </li>
 
           <li>
-            <a href="#project" className="hover:text-sky-400 transition">
-              Project
+            <a href="#projects" className="nav-link">
+              Projects
             </a>
           </li>
 
           <li>
-            <a href="#contact" className="hover:text-sky-400 transition">
+            <a href="#contact" className="nav-link">
               Contact
             </a>
           </li>
 
         </ul>
 
-      </div>
+        {/* BUTTON */}
+        <button className="hire-btn">
+          Hire Me
+        </button>
 
-    </nav>
+      </nav>
+
+    </header>
   );
 }
 

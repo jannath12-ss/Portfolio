@@ -2,43 +2,52 @@ import React from "react";
 
 function Education() {
   return (
-    <div
+    <section
       id="education"
-      className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden"
+      className="section flex items-center justify-center relative overflow-hidden"
     >
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?fm=jpg&q=60&w=3000&auto=format&fit=crop')",
-        }}
-      ></div>
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-white/25 to-gray-900/60"></div>
+      {/* GLOW EFFECT */}
+      <div className="glow glow1"></div>
+      <div className="glow glow2"></div>
 
-      {/* CONTENT (NO BOX) */}
-      <div className="relative w-full max-w-3xl text-Black text-center space-y-6">
+      {/* CONTENT */}
+      <div className="relative z-10 w-full max-w-4xl">
 
-        <h2 className="text-5xl font-bold mb-10">
+        {/* TITLE */}
+        <h2 className="title">
           Education
         </h2>
 
-        <h3 className="text-3xl font-semibold text-sky-200">
-          Diploma in Computer Engineering
-        </h3>
+        {/* CARD */}
+        <div className="glass card p-10 md:p-14 text-center">
 
-        <p className="text-lg text-white/80 leading-8">
-          Women's Polytechnic College, Thiruvananthapuram
-        </p>
+          {/* YEAR */}
+          <span className="text-pink-300 tracking-[3px] uppercase text-sm">
+            2023 - Present
+          </span>
 
-        <span className="inline-block text-sky-200 font-medium">
-          Currently Pursuing
-        </span>
+          {/* COURSE */}
+          <h3 className="text-4xl font-semibold text-pink-100 mt-5 mb-6">
+            Diploma in Computer Engineering
+          </h3>
+
+          {/* COLLEGE */}
+          <p className="text-lg text-pink-50/80 leading-8 max-w-2xl mx-auto">
+            Women’s Polytechnic College,
+            Thiruvananthapuram
+          </p>
+
+          {/* STATUS */}
+          <div className="mt-8 inline-block px-6 py-3 rounded-full bg-pink-300/10 border border-pink-300/20 text-pink-200">
+            Currently Pursuing
+          </div>
+
+        </div>
 
       </div>
-    </div>
+
+    </section>
   );
 }
 

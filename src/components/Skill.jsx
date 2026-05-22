@@ -1,77 +1,96 @@
 import React from "react";
 
-function Skill() {
+function Skills() {
+
+  const skills = [
+    {
+      title: "Frontend Development",
+      desc: "Creating responsive and modern user interfaces using latest frontend technologies.",
+      items: ["HTML", "CSS", "JavaScript", "React"]
+    },
+
+    {
+      title: "UI / UX Design",
+      desc: "Designing aesthetic layouts with smooth animations and user-friendly experiences.",
+      items: ["Figma", "Tailwind CSS", "Glassmorphism", "Responsive Design"]
+    },
+
+    {
+      title: "Programming",
+      desc: "Building logical solutions and backend fundamentals for web applications.",
+      items: ["Python", "SQL", "Git", "GitHub"]
+    },
+
+    {
+      title: "Soft Skills",
+      desc: "Strong communication, teamwork and creative problem-solving abilities.",
+      items: ["Leadership", "Team Work", "Communication", "Creativity"]
+    },
+
+    {
+      title: "Tools & Technologies",
+      desc: "Experience using development tools and platforms for efficient workflow.",
+      items: ["VS Code", "Vite", "Firebase", "Netlify"]
+    },
+
+    {
+      title: "Learning Goals",
+      desc: "Currently exploring advanced frontend concepts and full stack development.",
+      items: ["Node.js", "MongoDB", "APIs", "Next.js"]
+    }
+  ];
+
   return (
-    <div
-      id="skill"
-      className="min-h-screen relative overflow-hidden flex items-center justify-center p-6 pt-28"
-    >
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center animate-zoomSlow"
-        style={{
-          backgroundImage:
-            "url('https://wallpaperaccess.com/full/334517.jpg')",
-        }}
-      ></div>
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sky-800/50 via-Black/20 to-gray-800/50"></div>
+    <section id="skills" className="section">
 
-      {/* CONTENT (NO BOX) */}
-      <div className="relative w-full max-w-4xl text-Black space-y-8">
+      {/* GLOW */}
+      <div className="glow glow1"></div>
+      <div className="glow glow2"></div>
 
-        <h2 className="text-5xl font-bold text-center mb-10 animate-pulse">
-          My Skills
-        </h2>
+      {/* TITLE */}
+      <h2 className="title">
+        My Skills
+      </h2>
 
-        <div className="space-y-6">
+      {/* SUBTITLE */}
+      <p className="skills-subtitle">
+        Passionate about building elegant, responsive and modern
+        digital experiences with clean UI and smooth performance.
+      </p>
 
-          <div className="hover:scale-105 transition duration-300">
-            <h3 className="text-2xl font-semibold text-sky-200">C Programming</h3>
-            <p className="text-Black/80">
-              Basic knowledge in C programming and problem solving.
+      {/* GRID */}
+      <div className="skills-grid">
+
+        {skills.map((skill, index) => (
+
+          <div key={index} className="skill-card glass">
+
+            <h3>{skill.title}</h3>
+
+            <p>
+              {skill.desc}
             </p>
+
+            <div className="skill-tags">
+
+              {skill.items.map((item, i) => (
+                <span key={i} className="skill-tag">
+                  {item}
+                </span>
+              ))}
+
+            </div>
+
           </div>
 
-          <div className="hover:scale-105 transition duration-300">
-            <h3 className="text-2xl font-semibold text-sky-200">Python</h3>
-            <p className="text-Black/80">
-              Able to build simple applications using Python.
-            </p>
-          </div>
+        ))}
 
-          <div className="hover:scale-105 transition duration-300">
-            <h3 className="text-2xl font-semibold text-sky-200">SQL</h3>
-            <p className="text-Black/80">
-              Knowledge in database queries and management.
-            </p>
-          </div>
-
-          <div className="hover:scale-105 transition duration-300">
-            <h3 className="text-2xl font-semibold text-sky-200">Web Development</h3>
-            <p className="text-Black/80">
-              HTML, CSS, JavaScript, React responsive websites.
-            </p>
-          </div>
-
-        </div>
       </div>
 
-      {/* ANIMATION */}
-      <style>{`
-        @keyframes zoomSlow {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.06); }
-          100% { transform: scale(1); }
-        }
+    </section>
 
-        .animate-zoomSlow {
-          animation: zoomSlow 18s ease-in-out infinite;
-        }
-      `}</style>
-    </div>
   );
 }
 
-export default Skill;
+export default Skills;
