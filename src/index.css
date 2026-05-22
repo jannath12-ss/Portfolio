@@ -256,6 +256,85 @@ body{
 /* NAV ANIMATION */
 
 @keyframes navFade{
+  from{
+    opacity:0;
+    transform:translateY(-40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px){
+
+  .navbar-wrapper{
+    padding:15px 20px;
+  }
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+  }
+
+  .logo-name{
+    font-size:1.6rem;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+  }
+
+  .nav-link{
+    font-size:0.95rem;
+  }
+
+  .hire-btn{
+    width:100%;
+    max-width:220px;
+  }
+}
+
+@media (max-width: 600px){
+
+  .navbar{
+    border-radius:18px;
+  }
+
+  .logo-circle{
+    width:42px;
+    height:42px;
+    font-size:18px;
+  }
+
+  .logo-name{
+    font-size:1.3rem;
+  }
+
+  .nav-links{
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .nav-link{
+    font-size:0.9rem;
+  }
+
+  .hire-btn{
+    padding:10px 20px;
+    font-size:0.9rem;
+  }
+}
+/* NAV ANIMATION */
+
+@keyframes navFade{
   from{opacity:0; transform:translateY(-40px);}
   to{opacity:1; transform:translateY(0);}
 }
